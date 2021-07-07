@@ -1,0 +1,27 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server",
+    "myapp": "npm start --prefix myapp",
+    "dev": "concurrently \"npm run server\" \"npm run myapp\""
+  },
+  "author": "sanjay",
+  "license": "ISC"
+}
